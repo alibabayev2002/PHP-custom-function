@@ -1,5 +1,7 @@
 <?php 
-    function explode_($string,$search){
+
+
+    function explode__($string,$search){
         $array = [];
         $index = [];
         for($i = 0 ; $i < strlen($string) ; $i++){
@@ -12,7 +14,9 @@
             }
             if($bool){
                 $index[] = $i;
+    
             }
+            
         }
         $k = 0;
         for($l = 0; $l < count($index) ; $l++){
@@ -20,7 +24,9 @@
                 $k+=strlen($search);
             }
             $array[] = substr($string,$k,$index[$l]-$k);
+    
             $k = $index[$l];
+            // echo substr($string,$k,$index[$l])."<br>";
             if(count($index)-1==$l){
                 $array[] = substr($string,$index[$l]+strlen($search),strlen($string));
             }
@@ -28,7 +34,7 @@
     return $array;
     }
     
-    print_r(explode__("salam,salam,faiq",","));
+    print_r(explode__("salam,salam,ali",","));
 
 
 ?>
