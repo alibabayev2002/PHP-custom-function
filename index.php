@@ -31,10 +31,11 @@
                 $array[] = substr($string,$index[$l]+strlen($search),strlen($string));
             }
         }
-    return $array;
+    return !empty($array) ? $array : (array)$string;
     }
     
     print_r(explode__(",","Hello , world!"));
+
 
 
 
