@@ -1,7 +1,7 @@
 <?php 
 
 
-    function explode__($string,$search){
+    function explode__($search,$string){
         $array = [];
         $index = [];
         for($i = 0 ; $i < strlen($string) ; $i++){
@@ -34,7 +34,8 @@
     return $array;
     }
     
-    print_r(explode__("salam,salam,ali",","));
+    print_r(explode__(",","Hello , world!"));
+
 
 
 ?>
