@@ -28,7 +28,7 @@
     return $array;
     }
     
-    print_r(explode__("salam,salam,got",","));
+    print_r(explode__("salam,salam,faiq",","));
 
 
 ?>
