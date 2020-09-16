@@ -16,19 +16,20 @@
             }
         }
         $k = 0;
+
         for($l = 0; $l < count($index) ; $l++){
-            if($k!=0){
-                $k+=strlen($search);
-            }
+
             $array[] = substr($string,$k,$index[$l]-$k);
-    
             $k = $index[$l];
+            $k+=strlen($search);
+
         }
+
     return $array;
     }
     
 
-    print_r(explode(",","alma,armud,heyva"));
+    print_r(explode("a","alma,armud,heyva"));
     echo "<br>";
-    print_r(explode__(",","alma,armud,heyva"));
+    print_r(explode__("a","alma,armud,heyva"));
 ?>
